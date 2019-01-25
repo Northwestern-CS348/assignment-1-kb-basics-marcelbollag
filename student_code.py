@@ -18,10 +18,8 @@ class KnowledgeBase(object):
         return string
 
     def kb_assert(self, fact):
-        #print(fact)
-
-
-        #print("Asserting {!r}".format(fact))
+        
+        print("Asserting {!r}".format(fact))
 
         if isinstance(fact, Fact):
             if fact not in self.facts:
@@ -51,7 +49,7 @@ class KnowledgeBase(object):
         Returns:
             ListOfBindings|False - ListOfBindings if result found, False otherwise
         """
-        #print("Asking {!r}".format(fact))
+        print("Asking {!r}".format(fact))
         for f in self.facts:
             binding = match(fact.statement, f.statement)
             if binding:
