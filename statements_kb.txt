@@ -5,7 +5,7 @@ fact: (isa sphere block)
 fact: (isa box container)
 
 fact: (inst bigbox box)
-fact: (size bigbox big)
+fact: (inst bigbox box)
 fact: (color bigbox red)
 
 fact: (inst littlebox box)
